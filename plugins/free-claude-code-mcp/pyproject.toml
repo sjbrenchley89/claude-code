@@ -14,7 +14,9 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["."]
+include = [
+    "mcp_server.py",
+]
 
 [project.scripts]
 free-claude-code-mcp = "mcp_server:main"
